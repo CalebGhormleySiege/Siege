@@ -1,0 +1,111 @@
+[gd_scene load_steps=15 format=3 uid="uid://cxdrqlth1gqmi"]
+
+[ext_resource type="Script" uid="uid://db8b0ed42qylp" path="res://scenes/characters/fox_ranger.gd" id="1_wcaqj"]
+[ext_resource type="Texture2D" uid="uid://fwb2ux4ilsd3" path="res://assets/characters/Fox Soldier Walking.png" id="3_ab8jr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sr1ns"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xk6de"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0h7cx"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iewel"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbtup"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wxal"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rp2a4"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffvdp"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtrlh"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pv64h"]
+atlas = ExtResource("3_ab8jr")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1rtqn"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sr1ns")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xk6de")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0h7cx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iewel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dbtup")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wxal")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rp2a4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffvdp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtrlh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pv64h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wcaqj"]
+radius = 8.0
+
+[node name="FoxRanger" type="CharacterBody2D"]
+y_sort_enabled = true
+motion_mode = 1
+wall_min_slide_angle = 0.0
+script = ExtResource("1_wcaqj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -56)
+sprite_frames = SubResource("SpriteFrames_1rtqn")
+autoplay = "default"
+frame_progress = 0.128011
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_wcaqj")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+avoidance_enabled = true
+debug_enabled = true
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
