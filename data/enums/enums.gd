@@ -1,0 +1,39 @@
+class_name Enums
+enum Resources {
+	GOLD,
+	CROPS,
+	WOOD,
+	MINERALS,
+	CHARCOAL,
+	METAL,
+	LUMBER,
+	TOOLS,
+	FOOD,
+	MEDICINE,
+	AMMO,
+	GUNPOWDER,
+	LUXURIES,
+	CANNONS,
+	ALLOYS,
+	HORSES,
+	LIVESTOCK,
+	CIVILIAN_HOUSING,
+	SOLDIER_HOUSING,
+	INFLUENCE
+}
+
+enum RotationMode {
+	NONE,
+	TWO_WAY,
+	FOUR_WAY
+}
+
+enum BuildingShapes {
+	I_SHAPE,
+	O_SHAPE,
+	T_SHAPE,
+	J_SHAPE,
+	L_SHAPE,
+	S_SHAPE,
+	Z_SHAPE
+}

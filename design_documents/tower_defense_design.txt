@@ -1,0 +1,107 @@
+Siege Defense Brainstorming
+
+Summary: Siege is a Survival, City Builder, Tower Defense game. The Tower Defense aspect of the game is expressed by defending a star fortress (also known as a bastion fortress), from waves of attackers. The defense of the fortress must be balanced with the Survival and production (City Builder) aspects of the game. Factors like low Morale, low Loyalty, sickness, and starvation can all lead to losing the siege just as easily as the attackers breaching the fortress. 
+
+Lanes: Each fortress will have a number of lanes where the enemy can dig trenches to slowly and safely approach the fortress, or send waves of enemies. For example, an eight sided fortress may have eight lanes that the enemy can use to approach the fortress. Squadrons of enemies moving through trenches are more defended than enemies out in the open and will use trenches as much as possible. A player will know that a lane is open to attack when a trench is opened in that lane. The first, second, and third parallels are trenches that are dug parallel to the fortress instead of perpendicular to it. Once created, these allow the enemy to open new lanes closer to the fortress. For example, the enemy may have started approaching the fortress in lane three, but after constructing the first parallel, may start trenches in lanes two and five, changing and branching the path of approach. Forward defenses (Defense Towers) are built between lanes and can always hit at least two lanes, but may be able to reach further depending on the range of the defense. Some lane boundaries, or portions of them, will be occupied by obstacles such as rivers, forests, cliffs, chasms, etc., and do not allow the construction of defenses. Some lanes may have chokepoints where Obstacle Defenses can be built, which can divert or slow down approaching waves of enemies. Placement of forward defenses requires reading the terrain and enemy progress to plan for economical and effective defense.
+
+Layers: The fortress is surrounded by concentric circles that make up a layered battlespace. As the siege progresses the enemy slowly moves closer with their trenchworks taking more and more layers. Which creates increasing pressure and makes the fortress more difficult to defend. All the player can do is strategically delay them and hold out until the relief army arrives.
+Inner Sanctum: The innermost layer and center of the fortress, consisting of the town square, church, college, command center, and town hall (unique starting buildings). If a squadron enters the town square, then the player loses the game. Obstacle Defenses can be built on roads between these core buildings, obstructing entrance to the square, but are the absolute last resort.
+City: The middle layer of the fortress where buildings are constructed on city blocks. While a squadron is within this layer it severely harms morale and disables all nearby buildings. Obstacle Defenses can be built on roads between the buildings, obstructing entrance to the Inner Sanctum. Additionally, more effective Breach Obstacle Defenses can be built against the wall (crescent shaped), either to defend an existing breach, or in anticipation of one.
+
+Enemy Assault Strategies: The enemy will always use a combination of these strategies to apply pressure and attempt victory, but the four nations have preferred methods that they use more (controlled by Story Event Timeline).
+Tightening the Noose: Slow methodical progression of the siege by creating the first, second, and third parallels.
+Forward Squadron (Swarm) - Tries to take the closest defense in the lane that has not been taken and builds a battery (type of battery is dependent on distance from fortress / layer)
+Siege Cart (Armored) - Armored cart that tries to take the closest defense in the lane that has not been taken and builds a battery (type of battery is dependent on distance from fortress / layer)
+Sappers (Misc.) - Dig trenches that provide cover for the approach to the fortress (stopped by nearby defenses and slowed by cannon fire)
+Miners (Misc.) - Dig tunnels which can be used to destroy walls or invade fortress (adds another layer of pressure that diverts defenders)
+Rush Attack: Attempting a rushed Breaching Battery and Fortress Breach.
+Breaching Squadron (Swarm) - Rushes the wall and tries to immediately build a Breaching Battery on the Glacis
+Grenadier Cavalry (Fast) - Rushes the Glacis and throws grenades at soldiers on wall or covered way (typically followed by Breaching Squadron)
+Cannon Platform (Armored) - Wheeled Cannon Platform that moves to the wall and tries to create a breach. 
+Cannon Boat (Armored Naval) - Tries to create a breach via the water (will invade if there's a breach)
+Thousand Cuts: Focused on wounding and killing soldiers to cause attrition and defense depletion.
+Offensive Squadron (Swarm) - Slowly and aggressively moves towards the wall attacking defenses (will try to build a Breaching Battery on the glacis only if no one is left alive at the wall)
+Rifle Cavalry (Fast) - Rides to the wall and back, shooting at defenses.
+Mobile Cover (Armored) - Wheeled structure that slowly moves up, attacking defenses.
+Rifle Boats (Naval Swarm) - Attacks soldiers defending water facing walls (will invade if there's a breach)
+Starvation: Focused on restricting supplies and destroying infrastructure within the fortress.
+Escalade Squadron (Swarm) - Rushes the wall with ladders and attempts to wound civilians and destroy infrastructure.
+Blockade/Dam Squadron (Misc.) - Builds structures which stop supplies from reaching the fortress (requires sorties to stop and has long cooldown before it can be attempted again)
+Siege Tower (Armored) - Armored bridge or tower construct that rushes the wall and attempts to wound civilians and destroy infrastructure.
+
+Enemy Advance Structures:
+Siege Batteries (Breaching) - Built on the Glacis or Third Parallel to breach the wall
+Cavaliers de Tranches (Breaching) - Built on the glacis or third parallel to support breaching the wall
+Howitzer and Culverin Batteries - Built on the <first and/or second parallels> to damage defenses and wound or kill defenders to soften the defenses 
+Bombardment and Mortar Batteries - Built on the <first and/or second parallels> to damage infrastructure within the fortress and wound or kill civilians
+Basilisks <maybe> - Super heavy artillery that damages morale
+
+
+
+Enemy Types
+Offensive Squadron (Swarm)
+Moves steadily towards walls but shoots at defenses. Will always attack obstacles.
+Forward Squadron (Swarm)
+Moves to the closest unclaimed defense node and tries to take it. Will always attack obstacles.
+Breach Squadron (Swarm)
+Moves directly towards walls. Will avoid obstacles if possible.
+Escalade Squadron (Swarm)
+Moves directly to wall and tries to scale and hold it. Will avoid obstacles if possible.
+Rifle Cavalry Squadron (Fast)
+Moves quickly towards walls but shoots at defenses. Will always attack obstacles.
+Grenadier Cavalry Squadron (Fast)
+Moves quickly towards walls and tries to kill or wound soldiers closer to the wall. Will always attack obstacles.
+Siege Engine (Armored)
+
+
+Mobile Cover (Armored)
+
+
+Cannon Platform (Armored)
+
+
+Naval Assault (Marine)
+
+
+Cannon Boat (Armored Marine)
+
+
+Miners (Underground)
+
+
+
+Counter System:
+Armor Piercing is Excellent against Armored but has a slow rate of fire that makes it weak against most everything else. 
+Area of Effect is excellent against Swarm but slow and weak against Armored, Fast, and smaller groups.
+Rapid Fire is Excellent against Fast but weak against Armored and decent against Swarm. 
+Damage Over Time is most effective further from the fortress but has short range and ineffective at stopping Sappers
+Slow is a powerful support type but does very little by itself
+Bunker is a support type with high defense that’s difficult to remove but much more effective when combined with other defenses.
+Obstacle is a support type that can only be built at chokepoints and obstructs enemy movement. Aggressive enemies will attack it while others may take an alternate path. If no alternate path is available all enemy types will attack it.
+
+Cannons vs. Garrisons:
+Cannons require the cannon special resource as well as soldiers, so they're stronger but also higher risk if they're destroyed before they can be dismantled (resources are not recovered on destruction). They typically have longer range and deal more damage but fire slower.
+Infantry Garrisons cost less and typically have less range and damage but higher rate of fire.
+
+Defenses:
+
+
+Cannon Royal (Artillery) - Mid-range siege weapon and the standard “main battery” siege gun.
+Bombards (Artillery) - Fires stone balls with slow reload
+Culverins (Artillery) - Precision fire and long-range
+Demi-Cannons (Artillery) - Flexible siege and battlefield support
+Sakers (Artillery) - Fortress defense and anti-personnel fire
+Falconets (Artillery) - Fast reload
+Mortars (Artillery) - High-angle artillery that can attack targets behind walls with a slow reload
+Howitzers (Artillery) - Transitional artillery between direct and indirect fire (middle ground between cannons and mortars)
+Basilisks (Artillery) - Very large heavy guns that impact morale and cause high structure damage  but are very slow
+Organ Guns / Ribauldequins (Artillery) - Multiple barrels and rapid fire, but poor against fortifications
+Swivel Guns (Artillery) - Small rotating cannons with rapid aiming, excellent anti-personnel use
+
+Ammunition:
+Solid Shot: Standard iron ball for breaking walls and  smashing fortifications
+Stone Shot: Weaker shot that requires less metal
+Explosive Shells: Hollow bombs filled with powder that cause AOE damage or Concussive force (Mostly associated with mortars and used to cause interior damage).
+Grapeshot: Clusters of small balls, for anti-personnel devastation (essentially giant shotgun ammunition).
+Chain Shot: Two balls linked by chain for naval anti-rigging fire
+Heated Shot: Superheated cannonballs that start fires (Damage over time and especially dangerous against ships and wooden structures).

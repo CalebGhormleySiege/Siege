@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://btwncg3x5ra8y"]
+
+[ext_resource type="FontFile" uid="uid://wv1102fs5b7q" path="res://assets/ui/Canterbury.ttf" id="1_m5nwr"]
+
+[resource]
+default_font = ExtResource("1_m5nwr")
+default_font_size = 32
+Label/colors/font_color = Color(0.823529, 0.788235, 0.647059, 1)
+Label/colors/font_outline_color = Color(0.356863, 0.270588, 0.372549, 1)

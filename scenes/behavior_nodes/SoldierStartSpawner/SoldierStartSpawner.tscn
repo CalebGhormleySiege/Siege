@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://uesc6cbeuu5s"]
+
+[ext_resource type="Script" uid="uid://vna7v7wlfkky" path="res://scenes/behavior_nodes/SoldierStartSpawner/character_spawner.gd" id="1_d3le2"]
+[ext_resource type="Texture2D" uid="uid://w83ab44ims6d" path="res://scenes/behavior_nodes/SoldierStartSpawner/Green Base Tile.png" id="2_xv2bj"]
+
+[node name="SoldierStartSpawner" type="Node2D"]
+script = ExtResource("1_d3le2")
+grid_size = Vector2(144, 72)
+soldier_count = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_xv2bj")
+offset = Vector2(0, -36)

@@ -1,0 +1,102 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui_scripts/JobUI.gd" id="1_script"]
+
+[node name="JobUI" type="CanvasLayer"]
+script = ExtResource("1_script")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Panel" type="Panel" parent="Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 250.0
+grow_horizontal = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Job Management"
+horizontal_alignment = 1
+
+[node name="UnassignedHBox" type="HBoxContainer" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/Panel/VBoxContainer/UnassignedHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Unassigned: 0"
+
+[node name="HSeparator" type="HSeparator" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="FoodHBox" type="HBoxContainer" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/Panel/VBoxContainer/FoodHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Food: 0"
+
+[node name="AssignButton" type="Button" parent="Control/Panel/VBoxContainer/FoodHBox"]
+layout_mode = 2
+text = "+"
+
+[node name="WoodHBox" type="HBoxContainer" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/Panel/VBoxContainer/WoodHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Wood: 0"
+
+[node name="AssignButton" type="Button" parent="Control/Panel/VBoxContainer/WoodHBox"]
+layout_mode = 2
+text = "+"
+
+[node name="StoneHBox" type="HBoxContainer" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/Panel/VBoxContainer/StoneHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Stone: 0"
+
+[node name="AssignButton" type="Button" parent="Control/Panel/VBoxContainer/StoneHBox"]
+layout_mode = 2
+text = "+"
+
+[node name="ReliefHBox" type="HBoxContainer" parent="Control/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/Panel/VBoxContainer/ReliefHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Relief in: 10 days"
+
+[connection signal="pressed" from="Control/Panel/VBoxContainer/FoodHBox/AssignButton" to="." method="_on_assign_food_pressed"]
+[connection signal="pressed" from="Control/Panel/VBoxContainer/WoodHBox/AssignButton" to="." method="_on_assign_wood_pressed"]
+[connection signal="pressed" from="Control/Panel/VBoxContainer/StoneHBox/AssignButton" to="." method="_on_assign_stone_pressed"]
