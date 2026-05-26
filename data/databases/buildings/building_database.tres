@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BuildingDatabaseDefinition" load_steps=3 format=3 uid="uid://b12dqh5n43jqs"]
+
+[ext_resource type="Script" uid="uid://c2kvqyx7a786n" path="res://data/definitions/buildings/building_definition.gd" id="1_prxhy"]
+[ext_resource type="Script" uid="uid://ckrwywslst6hq" path="res://data/definitions/buildings/building_database_definition.gd" id="2_seaoq"]
+
+[resource]
+script = ExtResource("2_seaoq")
+buildings = Array[ExtResource("1_prxhy")]([])
+metadata/_custom_type_script = "uid://ckrwywslst6hq"

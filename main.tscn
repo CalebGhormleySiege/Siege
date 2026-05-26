@@ -15,10 +15,10 @@
 [ext_resource type="Script" uid="uid://cs4b270fxbhxx" path="res://scripts/ui_scripts/people_count_label.gd" id="13_2cqfq"]
 [ext_resource type="PackedScene" uid="uid://cxdrqlth1gqmi" path="res://scenes/characters/Soldier.tscn" id="15_vivmo"]
 [ext_resource type="PackedScene" path="res://scenes/ui/JobUI.tscn" id="16_jobui"]
-[ext_resource type="PackedScene" path="res://scenes/buildings/Farm.tscn" id="17_farm"]
+[ext_resource type="PackedScene" uid="uid://fgbb32jmdr05" path="res://scenes/buildings/Farm.tscn" id="17_farm"]
 [ext_resource type="PackedScene" path="res://scenes/buildings/Woodcutter.tscn" id="18_wood"]
 [ext_resource type="PackedScene" path="res://scenes/characters/Citizen.tscn" id="19_cit"]
-[ext_resource type="PackedScene" path="res://scenes/buildings/Quarry.tscn" id="20_stone"]
+[ext_resource type="PackedScene" uid="uid://ba0ud6hp1dnoh" path="res://scenes/buildings/Quarry.tscn" id="20_stone"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_lquwl"]
 vertices = PackedVector2Array(612.219, 648, 576, 666.109, 539.781, 648, 576, 629.891, 1024, 477.891, 3780.22, 576, 936, 1998.11, 952, 657.891, 952, 638.109, 827.781, 576, 1024, 458.109, 864, -882.109, 648, 270.109, -1980.22, 540, -160, 674.109, -160, 693.891, 216, 881.891, 432, 773.891, 576, 845.891)

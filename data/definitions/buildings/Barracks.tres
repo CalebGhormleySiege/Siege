@@ -6,7 +6,8 @@
 script = ExtResource("1_so0ie")
 id = "barracks"
 display_name = "Barracks"
-build_costs = {}
-workers_required = 5
-production_rates = {}
+build_costs = Dictionary[int, int]({})
+max_workers = 0
+min_workers = 0
+production_rates = Dictionary[int, int]({})
 hitpoints = 1800

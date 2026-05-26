@@ -1,5 +1,5 @@
 class_name Enums
-enum Resources {
+enum ResourceType {
 	GOLD,
 	CROPS,
 	WOOD,
@@ -22,10 +22,47 @@ enum Resources {
 	INFLUENCE
 }
 
-enum RotationMode {
-	NONE,
-	TWO_WAY,
-	FOUR_WAY
+enum IdeologyType {
+	TRADITION,
+	MODERNITY,
+	HONOR,
+	RATIONALISM,
+	ORDER,
+	LIBERTY
+}
+
+enum BuildingStateType {
+	UNDER_CONSTRUCTION,
+	ACTIVE,
+	DISABLED,
+	NO_WORKERS,
+	NO_INPUTS,
+	NO_STORAGE,
+	DAMAGED,
+	DEMOLISHED,
+	DESTROYED
+}
+
+enum EffectType {
+	FIRE_RISK,
+	EXPLOSION_RISK,
+	DISEASE_RISK,
+	CORRUPTION,
+	INJURY_RISK,
+	EFFICIENCY
+}
+
+enum RotationType {
+	NORTH_EAST,
+	SOUTH_EAST,
+	SOUTH_WEST,
+	NORTH_WEST
+}
+
+enum RotationModeType {
+	NONE,       # Square
+	TWO_WAY,    # Line
+	FOUR_WAY    # Most buildings
 }
 
 enum BuildingShapes {
@@ -36,4 +73,109 @@ enum BuildingShapes {
 	L_SHAPE,
 	S_SHAPE,
 	Z_SHAPE
+}
+
+enum Ideology {
+	TRADITION,
+	#vs
+	MODERNITY,
+	
+	HONOR,
+	#vs
+	RATIONALISM,
+	
+	ORDER,
+	#vs
+	LIBERTY
+}
+
+enum FactionType {
+	CHAPTER,
+	GUILD
+}
+
+enum WaypointType {
+	COMMAND_CENTER,
+	FORTRESS_ENTRANCE,
+	WALL_TOP,
+	BREACH_ENTRANCE,
+	BASTION,
+	RAVELIN,
+	GLACIS,
+	PARALLEL,
+	FIELD_STOP,
+	SPAWNPOINT
+}
+
+enum WaypointFlag {
+	OBSTRUCTION_NODE,
+	BREACH_REQUIRED,
+	ESCALADE_ALLOWED,
+	STRUCTURE_BUILD_NODE,
+	DEFENSE_NODE,
+	SPAWN_NODE
+}
+
+enum SectionType {
+	OPEN_GROUND,
+	TRENCH,
+	WALL_RAMP,
+	BREACH_PATH,
+	WALL_TOP,
+	FORTRESS_INTERIOR,
+	BRIDGE,
+	SAP_APPROACH
+}
+
+enum SectionFlag {
+	BLOCKABLE,
+	DIGGABLE,
+	ESCALADE_ALLOWED,
+	BREACHABLE,
+	DEFENSE_FIRE_ZONE,
+	COVERED
+}
+
+enum ObstructionState {
+	NONE,
+	UNDER_CONSTRUCTION,
+	ACTIVE,
+	DAMAGED,
+	DESTROYED
+}
+
+enum TrenchState {
+	NONE,
+	DIGGING,
+	SHALLOW,
+	COMPLETE,
+	COLLAPSED
+}
+
+enum CardinalDirection {
+	NORTH,
+	NORTH_EAST,
+	EAST,
+	SOUTH_EAST,
+	SOUTH,
+	SOUTH_WEST,
+	WEST,
+	NORTH_WEST
+}
+
+enum MapLayer {
+	TOWN_SQUARE,
+	INNER_FORTRESS,
+	OUTER_FORTRESS,
+	CURTAIN_WALL,
+	GLACIS,
+	THIRD_PARALLEL,
+	NEAR_FIELD,
+	SECOND_PARALLEL,
+	MID_FIELD,
+	FIRST_PARALLEL,
+	FAR_FIELD,
+	CIRCUMVALLATION,
+	ENEMY_CAMP,
+	CONTRAVALLATION
 }
