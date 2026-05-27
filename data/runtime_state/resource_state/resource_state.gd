@@ -2,6 +2,8 @@
 class_name ResourceState
 extends RefCounted
 
+var id: String = ""
+
 # ResourceType -> quantity
 var quantities := {}
 
@@ -15,15 +17,16 @@ var consumed_totals := {}
 var reserved_quantities := {}
 
 func serialize() -> Dictionary:
-	
 	return {
+		"id": id,
 		"quantities": quantities,
 		"produced_totals": produced_totals,
 		"consumed_totals": consumed_totals,
 		"reserved_quantities": reserved_quantities
 	}
 
-func deserialize(data: Dictionary):
+func deserialize(data: Dictionary) -> void:
+	id = data.get("id", "")
 	
 	quantities = data.get("quantities", {})
 	
